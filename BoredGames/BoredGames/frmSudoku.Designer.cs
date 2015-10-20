@@ -110,6 +110,7 @@
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "frmSudoku";
             this.Text = "Sudoku";
             this.Load += new System.EventHandler(this.frmSudoku_Load);

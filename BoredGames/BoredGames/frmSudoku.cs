@@ -34,7 +34,7 @@ namespace BoredGames
        private void txtGrid1_1_TextChanged(object sender, EventArgs e)
         {
             if (txtGrid1_1.Text != " ")
-                txtGrid1_1.BackColor = System.Drawing.Color.DimGray;
+               txtGrid1_1.BackColor = System.Drawing.Color.DimGray;
         }
 
        private void btnExit_Click(object sender, EventArgs e)
@@ -53,8 +53,6 @@ namespace BoredGames
            if (txtGrid5_5.Text != " ")
                txtGrid5_5.BackColor = System.Drawing.Color.DimGray;
        }
-
-
 
 
     }

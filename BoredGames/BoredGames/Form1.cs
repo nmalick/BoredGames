@@ -29,12 +29,13 @@ namespace BoredGames
             frmSudoku sudoku = new frmSudoku();
             sudoku.Show();
             this.Hide();
+            
         }
 
         private void button1_Click_1(object sender, EventArgs e)
         {
             if (MessageBox.Show("Do you want to exit?", "Exit", MessageBoxButtons.YesNo) == DialogResult.Yes)
-                this.Close();
+                Application.Exit();
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)

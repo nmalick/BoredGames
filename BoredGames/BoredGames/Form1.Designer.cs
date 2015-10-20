@@ -35,17 +35,17 @@
             this.btnChess = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newPlayerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loadGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loadGameToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnSudoku
             // 
             this.btnSudoku.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSudoku.BackgroundImage")));
-            this.btnSudoku.Location = new System.Drawing.Point(376, 102);
+            this.btnSudoku.Location = new System.Drawing.Point(142, 39);
             this.btnSudoku.Name = "btnSudoku";
             this.btnSudoku.Size = new System.Drawing.Size(303, 94);
             this.btnSudoku.TabIndex = 3;
@@ -57,7 +57,7 @@
             this.btnExit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnExit.BackgroundImage")));
             this.btnExit.Font = new System.Drawing.Font("Buxton Sketch", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnExit.Location = new System.Drawing.Point(376, 446);
+            this.btnExit.Location = new System.Drawing.Point(142, 351);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(303, 94);
             this.btnExit.TabIndex = 4;
@@ -68,7 +68,7 @@
             // btnCheckers
             // 
             this.btnCheckers.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCheckers.BackgroundImage")));
-            this.btnCheckers.Location = new System.Drawing.Point(376, 316);
+            this.btnCheckers.Location = new System.Drawing.Point(142, 248);
             this.btnCheckers.Name = "btnCheckers";
             this.btnCheckers.Size = new System.Drawing.Size(303, 94);
             this.btnCheckers.TabIndex = 5;
@@ -77,7 +77,7 @@
             // btnChess
             // 
             this.btnChess.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnChess.BackgroundImage")));
-            this.btnChess.Location = new System.Drawing.Point(376, 202);
+            this.btnChess.Location = new System.Drawing.Point(142, 148);
             this.btnChess.Name = "btnChess";
             this.btnChess.Size = new System.Drawing.Size(303, 94);
             this.btnChess.TabIndex = 6;
@@ -90,7 +90,7 @@
             this.exitToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1098, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(568, 24);
             this.menuStrip1.TabIndex = 7;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -104,6 +104,25 @@
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "File";
             // 
+            // newPlayerToolStripMenuItem
+            // 
+            this.newPlayerToolStripMenuItem.Name = "newPlayerToolStripMenuItem";
+            this.newPlayerToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.newPlayerToolStripMenuItem.Text = "New Player";
+            // 
+            // loadGameToolStripMenuItem
+            // 
+            this.loadGameToolStripMenuItem.Name = "loadGameToolStripMenuItem";
+            this.loadGameToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.loadGameToolStripMenuItem.Text = "Save  Game";
+            this.loadGameToolStripMenuItem.Click += new System.EventHandler(this.loadGameToolStripMenuItem_Click);
+            // 
+            // loadGameToolStripMenuItem1
+            // 
+            this.loadGameToolStripMenuItem1.Name = "loadGameToolStripMenuItem1";
+            this.loadGameToolStripMenuItem1.Size = new System.Drawing.Size(135, 22);
+            this.loadGameToolStripMenuItem1.Text = "Load Game";
+            // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
@@ -111,33 +130,15 @@
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
-            // newPlayerToolStripMenuItem
-            // 
-            this.newPlayerToolStripMenuItem.Name = "newPlayerToolStripMenuItem";
-            this.newPlayerToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.newPlayerToolStripMenuItem.Text = "New Player";
-            // 
-            // loadGameToolStripMenuItem
-            // 
-            this.loadGameToolStripMenuItem.Name = "loadGameToolStripMenuItem";
-            this.loadGameToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.loadGameToolStripMenuItem.Text = "Save  Game";
-            this.loadGameToolStripMenuItem.Click += new System.EventHandler(this.loadGameToolStripMenuItem_Click);
-            // 
-            // loadGameToolStripMenuItem1
-            // 
-            this.loadGameToolStripMenuItem1.Name = "loadGameToolStripMenuItem1";
-            this.loadGameToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
-            this.loadGameToolStripMenuItem1.Text = "Load Game";
-            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.DarkRed;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1098, 644);
+            this.ClientSize = new System.Drawing.Size(568, 467);
             this.Controls.Add(this.btnChess);
             this.Controls.Add(this.btnCheckers);
             this.Controls.Add(this.btnExit);
@@ -146,6 +147,7 @@
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
+            this.MaximizeBox = false;
             this.Name = "frmMain";
             this.Text = "#BoredGames";
             this.menuStrip1.ResumeLayout(false);
