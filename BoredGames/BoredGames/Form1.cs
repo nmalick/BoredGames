@@ -22,17 +22,29 @@ namespace BoredGames
 
         }
 
-        private void btnExit_Click(object sender, EventArgs e)
+      
+
+        private void button1_Click(object sender, EventArgs e)
         {
-            if(MessageBox.Show("Do you want to exit?", "Exit", MessageBoxButtons.YesNo)==DialogResult.Yes)
+            frmSudoku sudoku = new frmSudoku();
+            sudoku.Show();
+            this.Hide();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Do you want to exit?", "Exit", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 this.Close();
         }
 
-        private void btnSudoku_Click(object sender, EventArgs e)
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmSudoku  sudoku = new frmSudoku();
-            sudoku.Show();
-            this.Hide();
+            if (MessageBox.Show("Do you want to exit?", "Exit", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                this.Close();
+        }
+
+        private void loadGameToolStripMenuItem_Click(object sender, EventArgs e)
+        {
 
         }
     }
