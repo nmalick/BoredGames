@@ -34,8 +34,7 @@ namespace BoredGames
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Do you want to exit?", "Exit", MessageBoxButtons.YesNo) == DialogResult.Yes)
-                Application.Exit();
+            
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
@@ -47,6 +46,12 @@ namespace BoredGames
         private void loadGameToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Do you want to exit?", "Exit", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                Application.Exit();
         }
     }
 }

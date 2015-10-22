@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.btnSudoku = new System.Windows.Forms.Button();
-            this.btnExit = new System.Windows.Forms.Button();
             this.btnCheckers = new System.Windows.Forms.Button();
             this.btnChess = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -39,6 +38,7 @@
             this.loadGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loadGameToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnExit = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,19 +51,6 @@
             this.btnSudoku.TabIndex = 3;
             this.btnSudoku.UseVisualStyleBackColor = true;
             this.btnSudoku.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // btnExit
-            // 
-            this.btnExit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnExit.BackgroundImage")));
-            this.btnExit.Font = new System.Drawing.Font("Buxton Sketch", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnExit.Location = new System.Drawing.Point(142, 351);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(303, 94);
-            this.btnExit.TabIndex = 4;
-            this.btnExit.Text = "EXIT";
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // btnCheckers
             // 
@@ -130,6 +117,16 @@
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
+            // btnExit
+            // 
+            this.btnExit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnExit.BackgroundImage")));
+            this.btnExit.Location = new System.Drawing.Point(142, 348);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(303, 94);
+            this.btnExit.TabIndex = 8;
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -139,9 +136,9 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(568, 467);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnChess);
             this.Controls.Add(this.btnCheckers);
-            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnSudoku);
             this.Controls.Add(this.menuStrip1);
             this.DoubleBuffered = true;
@@ -160,7 +157,6 @@
         #endregion
 
         private System.Windows.Forms.Button btnSudoku;
-        private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnCheckers;
         private System.Windows.Forms.Button btnChess;
         private System.Windows.Forms.MenuStrip menuStrip1;
@@ -169,6 +165,7 @@
         private System.Windows.Forms.ToolStripMenuItem newPlayerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem loadGameToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem loadGameToolStripMenuItem1;
+        private System.Windows.Forms.Button btnExit;
     }
 }
 
