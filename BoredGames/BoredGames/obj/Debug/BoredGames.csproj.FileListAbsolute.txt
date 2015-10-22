@@ -16,3 +16,13 @@ S:\My Documents\Soft Eng\BoredGames\BoredGames\obj\Debug\BoredGames.frmMain.reso
 S:\My Documents\Soft Eng\BoredGames\BoredGames\obj\Debug\BoredGames.frmSudoku.resources
 S:\My Documents\Soft Eng\BoredGames\BoredGames\obj\Debug\BoredGames.Properties.Resources.resources
 S:\My Documents\Soft Eng\BoredGames\BoredGames\obj\Debug\BoredGames.csproj.GenerateResource.Cache
+C:\Users\Josh\Documents\GitHub\BoredGames\BoredGames\BoredGames\bin\Debug\BoredGames.exe.config
+C:\Users\Josh\Documents\GitHub\BoredGames\BoredGames\BoredGames\obj\Debug\BoredGames.exe
+C:\Users\Josh\Documents\GitHub\BoredGames\BoredGames\BoredGames\obj\Debug\BoredGames.pdb
+C:\Users\Josh\Documents\GitHub\BoredGames\BoredGames\BoredGames\bin\Debug\BoredGames.exe
+C:\Users\Josh\Documents\GitHub\BoredGames\BoredGames\BoredGames\bin\Debug\BoredGames.pdb
+C:\Users\Josh\Documents\GitHub\BoredGames\BoredGames\BoredGames\obj\Debug\BoredGames.csprojResolveAssemblyReference.cache
+C:\Users\Josh\Documents\GitHub\BoredGames\BoredGames\BoredGames\obj\Debug\BoredGames.frmMain.resources
+C:\Users\Josh\Documents\GitHub\BoredGames\BoredGames\BoredGames\obj\Debug\BoredGames.frmSudoku.resources
+C:\Users\Josh\Documents\GitHub\BoredGames\BoredGames\BoredGames\obj\Debug\BoredGames.Properties.Resources.resources
+C:\Users\Josh\Documents\GitHub\BoredGames\BoredGames\BoredGames\obj\Debug\BoredGames.csproj.GenerateResource.Cache
